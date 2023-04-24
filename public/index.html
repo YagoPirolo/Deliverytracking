@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delivery traking</title>
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <link rel="stylesheet" href="css/gallery.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img
+          src="https://i.pinimg.com/736x/43/0d/2a/430d2a1f07ffacbb44893f57bc2160e6.jpg" height="60" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h3>Delivery Tracking</h3>
+
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navigation bar -->
+
+
+  <!-- Carousel -->
+  <div class="container-fluid my-5">
+    <div id="deliveryCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#deliveryCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#deliveryCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#deliveryCarousel" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.dispatchtrack.com/hubfs/real-time-delivery-tracking.webp" class="d-block w-100"
+            alt="Delivery 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fast and reliable delivery</h5>
+            <p>We deliver your items quickly and safely, no matter where you are.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.dispatchtrack.com/hubfs/real%20time%20delivery%20tracking.webp" class="d-block w-100"
+            alt="Delivery 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Real-time tracking</h5>
+            <p>Track your order in real-time and stay updated on its delivery status.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#deliveryCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#deliveryCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- End of carousel -->
+
+  <!-- Main content section -->
+  <main class="container my-4">
+    <h3 class="text-center">Order Tracking</h3>
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Order ID</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Total Amount</th>
+          <th scope="col">Delivery Status</th>
+        </tr>
+      </thead>
+      <tbody id="ordersTableBody">
+      </tbody>
+    </table>
+  </main>
+  <!-- End of main content section -->
+
+   <!-- Cat pictures -->
+   <div class="container mt-5">
+    <h2 class="text-center mb-4">Delivery Tracking</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/order-delivery-service-online-smartphone-mobile-app-shipment-tracking-yellow-van-city-road-background-flat-vector-156365658.jpg" class="card-img-top hover"
+            alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Delivery ASAP</h5>
+            <p class="card-text">Delivery speed over 9000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://startupsmagazine.co.uk/sites/default/files/2022-03/AdobeStock_270177382.jpg" class="card-img-top hover"
+            alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Reliable</h5>
+            <p class="card-text">Protect your information</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://www.scnsoft.com/blog-pictures/custom-software-development/shipment-tracking.png" class="card-img-top hover" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Accurate</h5>
+            <p class="card-text">Enough to get a headshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cat pitures -->
+
+  <!-- Footer -->
+  <div class="container-fullwidth my-6">
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="#">Delivery Tracking.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+  <!-- End of .container -->
+  </div>
+  <!-- End of .container -->
+  <!-- End of Footer -->
+
+
+
+  <!-- Load BootStrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-fo6UOj2jcSdCVX9FEbBfMk17+EvwHSdKPcCYT/KF+OApb0zvtehD9JX9s+AHkL1p+c4a3MLU4Py6nFo/6N/VOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Load BootStrap 5 JS Bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+  <!-- Bootstrap icons https://icons.getbootstrap.com/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Supabase JavaScript dependencies -->
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase-js.js"></script>
+
+
+  <!-- The view script for this page - loaded as a module -->
+  <script src="scripts/index.js" type="module"></script>
+
+</body>
+
+</html>
